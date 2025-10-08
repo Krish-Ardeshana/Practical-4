@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dynamic Portal Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Theme Switcher (Advanced) -->
+  <button id="themeToggle" class="theme-btn">🌗 Toggle Theme</button>
+
+  <!-- Notification Popup (Supplementary Problem) -->
+  <div id="popupBanner" class="popup">
+    🔔 You have new notifications!
+    <span id="closePopup">&times;</span>
+  </div>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq" data-faq>
+      <div class="question">What is this portal?</div>
+      <div class="answer">This portal is a demo for dynamic content using JavaScript.</div>
+    </div>
+    <div class="faq" data-faq>
+      <div class="question">How does collapsible FAQ work?</div>
+      <div class="answer">Each question toggles visibility of its answer using event listeners.</div>
+    </div>
+    <div class="faq" data-faq>
+      <div class="question">Can I switch themes?</div>
+      <div class="answer">Yes! Use the toggle button at the top right to switch between light and dark themes.</div>
+    </div>
+  </section>
+
+  <!-- Slider Section -->
+  <section class="slider-section">
+    <h2>Image Slider</h2>
+    <div class="slider">
+      <img id="sliderImage" src="https://picsum.photos/id/1015/400/200" alt="Slider Image" />
+      <div class="slider-controls">
+        <button id="prevBtn">⟨ Prev</button>
+        <button id="nextBtn">Next ⟩</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
